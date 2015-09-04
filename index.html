@@ -9,20 +9,62 @@
 </head>
 
 <body>
+  <nav class="clearfix white bg-black">
+    <div class="sm-col">
+      <a href="http://google.com" class="btn py2">Hello</a>
+      <a href="http://google.com" class="btn py2">Tools</a>
+      <a href="http://google.com" class="btn py2">Skills</a>
+    </div>
+    <div class="sm-col-right">
+      <a href="http://google.com" class="btn py2">Projects</a>
+    </div>
+  </nav>
   <div id="banner-block">
-    <h2>Project Title</h2>
-    <h3>Subtitle</h3>
+    <div class="h1">Project Title</div>
+    <div class="h3">Subtitle</div>
     <div class="p2 clearfix border">
-      <h2>This all of these items below are floated left</h2>
+      <div class="h2">
+        This all of these items below are floated left</div>
       <p>
         This means that they automatically stack vertically when the width is not sufficient. The div container is set as
         <code>clearfix</code>
       </p>
+      <div class="p1 border clearfix">
         <div class="left p1 border">I am item number 1</div>
         <div class="left p1 border">I am item number 2</div>
         <div class="left p1 border">I am item number 3</div>
         <div class="left p1 border">I am item number 4</div>
-        <img src="http://lorempixel.com/output/cats-q-c-640-480-4.jpg" />
+      </div>
+      <p>
+        The images below use a grid system, column width to assign their relative widths:
+        <code>col-4</code>
+      </p>
+      <div class="clearfix border">
+        <img class="left col-4" src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" alt="Basscss" />
+        <img class="left col-4" src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" alt="Basscss" />
+        <img class="left col-4" src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" alt="Basscss" />
+      </div>
+      <p>
+        The images below use a grid system, column width to assign their relative widths:
+        <code>col-3</code>
+      </p>
+      <div class="clearfix border">
+        <img class="left col-3" src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" alt="Basscss" />
+        <img class="left col-3" src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" alt="Basscss" />
+        <img class="left col-3" src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" alt="Basscss" />
+        <img class="left col-3" src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" alt="Basscss" />
+      </div>
+      <p>
+        Stacking images by setting
+        <code>absolute top-0 right-0 </code>with an increasing
+        <code>m1, m2, m3</code>.
+      </p>
+      <div class="relative p1 border">
+        <img class="absolute col-1 top-0 left-0 border" src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" alt="Basscss" />
+        <img class="absolute col-1 top-0 left-0 m1 border" src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" alt="Basscss" />
+        <img class="absolute col-1 top-0 left-0 m2 border" src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" alt="Basscss" />
+        <img class="absolute col-1 top-0 left-0 m3 border" src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" alt="Basscss" />
+      </div>
 
     </div>
 
